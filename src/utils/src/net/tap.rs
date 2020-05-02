@@ -644,7 +644,7 @@ mod tests {
 
     #[test]
     fn test_send_plain_data(){
-        let tap1 = Tap::open_named("plaindata").unwrap();
+        let mut tap1 = Tap::open_named("plaindata").unwrap();
         let data = "plain data".as_bytes();
         tap1.write(&data);
         let mut buffer = String::new();
