@@ -649,7 +649,7 @@ mod tests {
         tap1.write(&data);
         let mut buffer = String::new();
         tap1.read_to_string(&mut buffer);
-        println!("{:x}", buffer);
+        println!("{}", buffer);
     }
 
 }
