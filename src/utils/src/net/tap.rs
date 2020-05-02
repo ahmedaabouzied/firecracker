@@ -227,7 +227,7 @@ impl AsRawFd for Tap {
 
 #[cfg(test)]
 mod tests {
-    extern crate dumbo;
+    // extern crate dumbo;
 
     use std::io::Read;
     use std::mem;
@@ -237,10 +237,10 @@ mod tests {
     use std::sync::atomic::{AtomicUsize, Ordering};
     use std::time::Duration;
 
-    use self::dumbo::{
-        EthIPv4ArpFrame, EthernetFrame, IPv4Packet, MacAddr, UdpDatagram, ETHERNET_PAYLOAD_OFFSET,
-        ETHERTYPE_ARP, ETHERTYPE_IPV4, ETH_IPV4_FRAME_LEN, PROTOCOL_UDP, UDP_HEADER_SIZE,
-    };
+    // use self::dumbo::{
+    //    EthIPv4ArpFrame, EthernetFrame, IPv4Packet, MacAddr, UdpDatagram, ETHERNET_PAYLOAD_OFFSET,
+    //    ETHERTYPE_ARP, ETHERTYPE_IPV4, ETH_IPV4_FRAME_LEN, PROTOCOL_UDP, UDP_HEADER_SIZE,
+    // };
 
     use super::*;
 
