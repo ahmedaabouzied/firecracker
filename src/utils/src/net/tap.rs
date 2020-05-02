@@ -110,7 +110,7 @@ impl Tap {
             )
         };
         if fd < 0 {
-            Println!("PERMISSION")
+            Println!("PERMISSION");
             return Err(Error::OpenTun(IoError::last_os_error()));
         }
 
